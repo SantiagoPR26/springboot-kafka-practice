@@ -31,35 +31,35 @@ Zookeeper es un recurso que utiliza kafka para funcionar correctamente
 #### ▶️ Crea un nuevo topic en el servidor de kafka
 
 Topic es un tema de conversacion por el cual se van a enviar mensajes mediante kafka, sin esto no se pueden enviar
-- Variables {topic-name} y {host} se deben cambiar dependiendo del caso de uso.
+  
+Las variables {topic-name} y {host} se deben cambiar dependiendo del caso de uso.
 
 
     .\bin\windows\kafka-topics.bat --create --topic {topic-name} --bootstrap-server {host}:9092
 
 #### ▶️ Decribir los detalles de un topic
 
-- Con este comando podemos listar los detalles de un topic en especifico
+Con este comando podemos listar los detalles de un topic en especifico
 
 
     .\bin\windows\kafka-topics.bat --describe --topic {topic-name} --bootstrap-server {host}:9092
 
 #### ▶️ Listar todos los topics que existen dentro del broker
-
-- Con este comando podemos listar todos los topics creados
+Con este comando podemos listar todos los topics creados
 
 
     .\bin\windows\kafka-topics.bat --list --bootstrap-server {host}:9092
 
 #### ▶️ Inicia una consola para ver mensajes de un topic específico
 
-- Aqui le indicamos a nuestra terminal especificamente a que topic observar
+Aqui le indicamos a nuestra terminal especificamente a que topic observar
 
 
     .\bin\windows\kafka-console-consumer.bat --topic {nombreTopic} --bootstrap-server {host}:9092
 
 #### ▶️ Inicia una consola para enviar mensajes a un topic específico
 
-- Aqui le indicamos a nuestra terminal especificamente a que topic enviara mensajes
+Aqui le indicamos a nuestra terminal especificamente a que topic enviara mensajes
 
 
     .\bin\windows\kafka-console-producer.bat --broker-list {host}:9092 --topic {topic-name}
