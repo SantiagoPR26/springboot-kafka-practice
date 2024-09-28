@@ -74,5 +74,30 @@ Las dependencias utilizadas en este proyecto seran
 - Spring Web
 - Spring Boot DevTools
 - Spring for Apache Kafka  
+  
 
   ![img_2.png](images/img_2.png)
+
+
+#### ▶️ Primer microservicio llamado Provider
+
+Al ser un microservicio como el proyecto ya tiene todas las dependencias, a este no se le agrega ninguna  
+
+![Screenshot_5.png](images/Screenshot_5.png)
+
+Al agregarlo al proyecto padre se le indica mediante el pom el parentesco
+
+![Screenshot_1.png](images/Screenshot_1.png)
+
+#### ▶️ Segundo microservicio llamado Consumer
+
+![Screenshot.png](images/Screenshot_2.png)
+
+
+## 🎨 Extra - Personalizar banners de cada microservicio
+
+Utilizo un generador de texto para crear banners personalizados a cada microservicio para que a la hora de correrlos en consola sea mas facil identificarlos
+
+Esto se logra añadiendo un archivo llamado banner.txt en el directorio de resources en la carpeta main de cada microservicio
+  
+[Generador](https://devops.datenkollektiv.de/banner.txt/index.html)
