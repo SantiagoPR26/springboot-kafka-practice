@@ -2,7 +2,7 @@
 ## Practice for Apache Kafka in microservices
 
 
-### ✅  En este proyecto hare una practica con apache kafka en la terminal y luego sera pasado a un sistema de microservicios con SpringBoot
+### ✅  En este proyecto hare una practica de mensajes de evento con apache kafka en la terminal y luego sera pasado a un sistema de microservicios con SpringBoot
 Tecnologias usadas
 
 - [Apache Kafka](https://kafka.apache.org/documentation/)
